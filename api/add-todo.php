@@ -1,4 +1,9 @@
 <?php 
+    // vue cli
+    header("Access-Control-Allow-Origin: http://127.0.0.1:55555");
+    header("Access-Control-Allow-Headers: X-Requested-With");
+
+
     // % ho qualcosa ricevuto via post nella chiave title ?
     if ( isset($_POST["title"]) && !empty($_POST["title"]) ){
         // # e nella chiave done? se c'e' usala, altrimenti inizializza done come false
